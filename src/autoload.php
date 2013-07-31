@@ -10,7 +10,7 @@ spl_autoload_register(function($className) {
 	
 	$classPath = strtr($className, '\\', '/') . '.php';
 	
-	require(__DIR__ . $classPath);
+	require(__DIR__ . '/' . $classPath);
 });
 
 ?>
